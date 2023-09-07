@@ -9,11 +9,7 @@ get_header(); ?>
 <div class="container">
     <div class="description panel blue">
         <div>
-<<<<<<< HEAD
             <h1>Horizontal snapping sections (VERY simple)</h1>
-=======
-            <h1>Horizontal snapping sections (simple)</h1>
->>>>>>> a8c366023966dc78b490e975299268e1633b50c9
             <p>Scroll vertically to scrub the horizontal animation. It also dynamically snaps to the sections in an
                 organic way based on the velocity. The snapping occurs based on the natural ending position after
                 momentum is applied, not a simplistic "wherever it is when the user stops".</p>

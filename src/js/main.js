@@ -38,6 +38,8 @@ lenis.on(
 // END LENIS SMOOTH SCROLL
 // END LENIS SMOOTH SCROLL
 
+// GSAP HORIZONTAL PANEL SCROLL
+// GSAP HORIZONTAL PANEL SCROLL
 let sections = gsap.utils.toArray(".panel");
 
 gsap.to(sections, {
@@ -48,7 +50,11 @@ gsap.to(sections, {
         pin: true,
         scrub: 1,
         snap: 1 / (sections.length - 1),
+        // we snap each 1/X, X being the number of panels
         // base vertical scrolling on how wide the container is so it feels more natural.
         end: "+=3500",
     },
 });
+
+// END GSAP HORIZONTAL PANEL SCROLL
+// END GSAP HORIZONTAL PANEL SCROLL
