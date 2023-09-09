@@ -1,0 +1,19 @@
+.hero {
+    & div {
+        height: 666px;
+        max-height: 70vh;
+        overflow: hidden;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        & button {
+            width: 300px;
+            margin: 0 auto;
+            color: $smooth-white;
+            border: 2px solid $smooth-white;
+            outline: none;
+        }
+    }
+}

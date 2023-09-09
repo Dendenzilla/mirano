@@ -1,0 +1,23 @@
+.mirano_logo {
+    max-width: 200px;
+}
+.st0 {
+    fill: $smooth-white;
+}
+header {
+    position: sticky;
+    top: 0;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4.125rem;
+    padding: 2.625rem 0;
+
+    & a {
+        color: $smooth-white;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}

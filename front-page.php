@@ -3,6 +3,13 @@
 Template Name: Front page
 */
 get_header(); ?>
+<section class="hero">
+    <div style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/img/hero_bg.jpg' );">
+        <span></span>
+        <h1>Mirano brussels</h1>
+        <button>Upcoming events</button>
+    </div>
+</section>
 <section class="after">
     <p>section</p>
 </section>

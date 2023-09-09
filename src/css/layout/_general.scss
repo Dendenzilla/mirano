@@ -10,18 +10,20 @@ body {
 h1 {
     color: $smooth-white;
     font-weight: bold;
-    font-size: clamp(1.5rem, 0.8rem + 3.3333vw, 4.5rem);
-    line-height: 94.7%;
-    font-family: "Raleway", sans-serif;
-    text-wrap: balance;
+    font-size: clamp(2.5rem, 3.8rem + 3.3333vw, 8.5rem);
+    font-family: "Bebas Neue", sans-serif;
     text-align: center;
+    text-shadow: -2px 2px 16px rgba(0, 0, 0, 0.25);
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 h2 {
     color: $smooth-black;
     font-size: clamp(1rem, 0.6rem + 3.3333vw, 4.5rem);
     line-height: 0.95;
     font-weight: 900;
-    font-family: "Raleway", sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     text-wrap: balance;
     opacity: 0;
     letter-spacing: 0.2rem;
