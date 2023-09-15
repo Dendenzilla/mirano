@@ -15,6 +15,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mulish:wght@300;400;700&family=Oswald:wght@300;400&display=swap"
         rel="stylesheet">
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- END SWIPER -->
     <link rel="icon" href="">
     <title>Martin Adriaensen's Portfolio</title>
     <?php wp_head(); ?>

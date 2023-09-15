@@ -19,13 +19,15 @@ h1 {
     text-transform: uppercase;
 }
 h2 {
-    color: $smooth-black;
-    font-size: clamp(1rem, 0.6rem + 3.3333vw, 4.5rem);
-    line-height: 0.95;
-    font-weight: 900;
+    color: $smooth-white;
+    font-size: clamp(1rem, 0.6rem + 3.3333vw, 6rem);
     font-family: "Bebas Neue", sans-serif;
     text-wrap: balance;
-    opacity: 0;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    // opacity: 0;
     letter-spacing: 0.2rem;
     &.subtitle {
         margin-bottom: 0.5rem;
@@ -49,23 +51,24 @@ h2 {
 }
 h3 {
     font-size: 2rem;
-    color: $smooth-black;
+    color: $smooth-white;
     line-height: 0.95;
     font-family: "Raleway", sans-serif;
 }
 p {
-    color: $smooth-black;
-    font-size: 1.3rem;
-    line-height: 1.825rem;
-    letter-spacing: 0.05em;
-    font-family: "Raleway", sans-serif;
+    color: $smooth-white;
+    font-size: 1.25rem;
+    line-height: 2.1655rem;
+    font-weight: 300;
+    font-family: "Oswald", sans-serif;
+    text-wrap: balance;
 }
 li {
     font-family: "Montserrat", sans-serif;
     margin-top: 1.5rem;
 }
 a {
-    color: $smooth-black;
+    color: $smooth-white;
     text-decoration: none;
     font-family: inherit;
 }
@@ -88,6 +91,7 @@ p img.emoji {
 }
 section {
     // width: 100%;
+    padding: 0 1rem;
     border: inset 1px tomato;
     & + section {
         // margin-top: 7rem !important;
@@ -229,7 +233,22 @@ button {
 // // FIN BUTTON
 // // FIN BUTTON
 // // FIN BUTTON
-
+// SWIPER
+// SWIPER
+// SWIPER
+.swipeContainer {
+    padding: 0;
+    & .swiper {
+        width: 100%;
+        height: 375px;
+        & .swiper-slide {
+            overflow: hidden;
+        }
+    }
+}
+// FIN SWIPER
+// FIN SWIPER
+// FIN SWIPER
 // horiz scroll
 body {
     overscroll-behavior: none;

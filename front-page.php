@@ -10,6 +10,42 @@ get_header(); ?>
         <button>Upcoming events</button>
     </div>
 </section>
+<section class="center">
+    <h2>Discover the mirano</h2>
+    <p>The « Cine Mirano » cinema opened its doors in 1934, Closed down in 1978 to then be transformed into a nightclub
+        in 1981.</br> In 2017, it closed its doors for 2 years for a major makeover and re-opened in 2019 under new
+        management.</br> Now open with an urban programming from Thursday to Sunday.</br> Available for hire on request
+    </p>
+</section>
+<section class="swipeContainer">
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/hero_bg.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/nguyen_rs.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/benoit_rs.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/retable.jpg" alt="">
+            </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+</section>
 <section class="after">
     <p>section</p>
 </section>

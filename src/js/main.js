@@ -58,3 +58,22 @@ gsap.to(sections, {
 
 // END GSAP HORIZONTAL PANEL SCROLL
 // END GSAP HORIZONTAL PANEL SCROLL
+// SWIPER
+// SWIPER
+// SWIPER
+const swiper = new Swiper(".swiper", {
+    // Optional parameters
+    slidesPerView: 3,
+    spaceBetween: 30,
+    direction: "horizontal",
+    // loop: true,
+
+    // Navigation arrows
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+// END SWIPER
+// END SWIPER
+// END SWIPER
