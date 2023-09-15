@@ -5,16 +5,36 @@
     fill: $smooth-white;
 }
 header {
-    position: sticky;
-    top: 0;
+    position: relative;
     z-index: 99;
+    height: 90px;
 }
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 4.125rem;
     padding: 2.625rem 0;
+    background: linear-gradient(
+        to bottom,
+        $smooth-black-background 0%,
+        rgba(0, 0, 0, 0.738) 19%,
+        rgba(0, 0, 0, 0.541) 34%,
+        rgba(0, 0, 0, 0.382) 47%,
+        rgba(0, 0, 0, 0.278) 56.5%,
+        rgba(0, 0, 0, 0.194) 65%,
+        rgba(0, 0, 0, 0.126) 73%,
+        rgba(0, 0, 0, 0.075) 80.2%,
+        rgba(0, 0, 0, 0.042) 86.1%,
+        rgba(0, 0, 0, 0.021) 91%,
+        rgba(0, 0, 0, 0.008) 95.2%,
+        rgba(0, 0, 0, 0.002) 98.2%,
+        transparent 100%
+    );
 
     & a {
         color: $smooth-white;

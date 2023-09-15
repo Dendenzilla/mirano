@@ -58,6 +58,31 @@ gsap.to(sections, {
 
 // END GSAP HORIZONTAL PANEL SCROLL
 // END GSAP HORIZONTAL PANEL SCROLL
+
+// GSAP HEADER REVEAL BASED ON SCROLL UP
+// GSAP HEADER REVEAL BASED ON SCROLL UP
+// GSAP HEADER REVEAL BASED ON SCROLL UP
+
+const showAnim = gsap
+    .from("nav", {
+        yPercent: -100,
+        paused: true,
+        duration: 0.2,
+    })
+    .progress(1);
+
+ScrollTrigger.create({
+    start: "top top",
+    end: 99999,
+    onUpdate: (self) => {
+        self.direction === -1 ? showAnim.play() : showAnim.reverse();
+    },
+});
+
+// END GSAP HEADER REVEAL
+// END GSAP HEADER REVEAL
+// END GSAP HEADER REVEAL
+
 // SWIPER
 // SWIPER
 // SWIPER
