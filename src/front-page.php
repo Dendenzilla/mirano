@@ -49,8 +49,19 @@ get_header(); ?>
 <section class="after">
     <p>section</p>
 </section>
-<div class="container">
-    <div class="description panel blue">
+<div class="panel-container">
+    <div class="static-date">
+        <div class="first-date">
+            <span>1</span><span>9</span><span>1</span><span>2</span>
+        </div>
+        <div class="date-link">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow.png" alt="">
+        </div>
+        <div class="second-date">
+            <span>2</span><span>0</span><span>2</span><span>3</span>
+        </div>
+    </div>
+    <div class="description panel blue" style="height:65%">
         <div>
             <h1>Horizontal snapping sections (VERY simple)</h1>
             <p>Scroll vertically to scrub the horizontal animation. It also dynamically snaps to the sections in an
