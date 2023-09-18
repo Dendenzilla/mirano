@@ -46,53 +46,100 @@ get_header(); ?>
         <div class="swiper-scrollbar"></div>
     </div>
 </section>
-<section class="after">
-    <p>section</p>
-</section>
-<div class="panel-container">
-    <div class="static-date">
-        <div class="first-date">
-            <span>1</span><span>9</span><span>1</span><span>2</span>
-        </div>
-        <div class="date-link">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow.png" alt="">
-        </div>
-        <div class="second-date">
-            <span>2</span><span>0</span><span>2</span><span>3</span>
-        </div>
-    </div>
-    <div class="description panel blue" style="height:65%">
-        <div>
-            <h1>Horizontal snapping sections (VERY simple)</h1>
-            <p>Scroll vertically to scrub the horizontal animation. It also dynamically snaps to the sections in an
-                organic way based on the velocity. The snapping occurs based on the natural ending position after
-                momentum is applied, not a simplistic "wherever it is when the user stops".</p>
-            <div class="scroll-down">Scroll down<div class="arrow"></div>
+<section class="timeline">
+    <div class="panel-container">
+        <div class="static-date">
+            <div class="first-date">
+                <span>1</span><span>9</span><span>1</span><span>2</span>
+            </div>
+            <div class="date-link">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow.png" alt="">
+            </div>
+            <div class="second-date">
+                <span>2</span><span>0</span><span>2</span><span>3</span>
             </div>
         </div>
+        <div class="description panel blue" style="height:65%">
+            <div>
+                <h1>Horizontal snapping sections (VERY simple)</h1>
+                <p>Scroll vertically to scrub the horizontal animation. It also dynamically snaps to the sections in an
+                    organic way based on the velocity. The snapping occurs based on the natural ending position after
+                    momentum is applied, not a simplistic "wherever it is when the user stops".</p>
+                <div class="scroll-down">Scroll down<div class="arrow"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="panel">
+            <div class="panel__container">
+                <div class="panel__container__text">
+                    <h3>1912</h3>
+                    <p>From 1912, brasserie-cinema-event space 'A la Girafe' at no 38. In 1931 transformed into a
+                        cinema, first under the name of Casino de Saint-Josse, then in 1942, under the current name of
+                        Mirano. It was at this time that the entrance was adapted to the style of the time by the
+                        architect R. AJOUX, who also drew the plans for the Century cinema in 1938 and a 1st project,
+                        not finished, for the Marignan.
+                        After the demolition of buildings 5, 38 and 40, it was reconstructed in 1951. Until 1976,
+                        managed by the company Les Cinés de Saint-Josse, which also operates the Marignan. In 1977,
+                        taken over by the S.P.R.L. Les Cinés Madou. Originally, a capacity of 600 over the parterre and
+                        the balcony. The last showing took place in 1978.</p>
+                </div>
+                <div class="panel__container__img">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/1912.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="panel">
+            <div class="panel__container">
+                <div class="panel__container__text">
+                    <h3>1912</h3>
+                    <p>From 1912, brasserie-cinema-event space 'A la Girafe' at no 38. In 1931 transformed into a
+                        cinema, first under the name of Casino de Saint-Josse, then in 1942, under the current name of
+                        Mirano. It was at this time that the entrance was adapted to the style of the time by the
+                        architect R. AJOUX, who also drew the plans for the Century cinema in 1938 and a 1st project,
+                        not finished, for the Marignan.
+                        After the demolition of buildings 5, 38 and 40, it was reconstructed in 1951. Until 1976,
+                        managed by the company Les Cinés de Saint-Josse, which also operates the Marignan. In 1977,
+                        taken over by the S.P.R.L. Les Cinés Madou. Originally, a capacity of 600 over the parterre and
+                        the balcony. The last showing took place in 1978.</p>
+                </div>
+                <div class="panel__container__img">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/1912.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="panel">
+            <div class="panel__container">
+                <div class="panel__container__text">
+                    <h3>1912</h3>
+                    <p>From 1912, brasserie-cinema-event space 'A la Girafe' at no 38. In 1931 transformed into a
+                        cinema, first under the name of Casino de Saint-Josse, then in 1942, under the current name of
+                        Mirano. It was at this time that the entrance was adapted to the style of the time by the
+                        architect R. AJOUX, who also drew the plans for the Century cinema in 1938 and a 1st project,
+                        not finished, for the Marignan.
+                        After the demolition of buildings 5, 38 and 40, it was reconstructed in 1951. Until 1976,
+                        managed by the company Les Cinés de Saint-Josse, which also operates the Marignan. In 1977,
+                        taken over by the S.P.R.L. Les Cinés Madou. Originally, a capacity of 600 over the parterre and
+                        the balcony. The last showing took place in 1978.</p>
+                </div>
+                <div class="panel__container__img">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/1912.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="panel">
+            FOUR
+        </section>
+        <section class="panel">
+            FIVE
+        </section>
+        <section class="panel">
+            SIX??
+        </section>
+
     </div>
-
-
-    <section class="panel red">
-        ONE
-    </section>
-    <section class="panel orange">
-        TWO
-    </section>
-    <section class="panel purple">
-        THREE
-    </section>
-    <section class="panel green">
-        FOUR
-    </section>
-    <section class="panel gray">
-        FIVE
-    </section>
-    <section class="panel sky">
-        SIX??
-    </section>
-
-</div>
+</section>
 <section class="after">
     <p>section</p>
 </section>
