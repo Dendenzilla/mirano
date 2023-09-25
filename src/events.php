@@ -12,6 +12,14 @@ get_header(); ?>
         'meta_key'  => 'date_picker',
         'orderby'   => 'meta_value_num',
         'order'     => 'ASC',
+        'meta_query'=> array(
+            array(
+              'key' => 'date_picker',
+              'compare' => '>',
+              'value' => date("Y-m-d"),
+              'type' => 'DATE'
+            )
+        ),
     ));
 
     $group_posts = array();
