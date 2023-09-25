@@ -122,6 +122,10 @@ section {
 .emoji {
     font-size: 3rem;
 }
+.section__end__cta {
+    font-family: inherit;
+    text-decoration: underline;
+}
 // FORMS
 // FORMS
 // FORMS
@@ -235,11 +239,18 @@ button {
 // SWIPER
 .swipeContainer {
     padding: 0;
+    padding-top: 6rem;
     & .swiper {
         width: 100%;
         height: 375px;
         & .swiper-slide {
             overflow: hidden;
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: right top;
+            }
         }
     }
 }
@@ -259,58 +270,11 @@ button {
 }
 .panel-container {
     overscroll-behavior: none;
-    width: 700%;
+    width: 400%;
     height: 65vh;
     display: flex;
     flex-wrap: nowrap;
     position: relative;
-    // &::before,
-    // &::after {
-    //     content: "";
-    //     position: absolute;
-    //     top: 0;
-    //     height: 100%;
-    //     width: 6rem;
-    //     z-index: 99;
-    // }
-    // &::before {
-    //     left: 0;
-    //     background: linear-gradient(
-    //         to right,
-    //         $smooth-black-background 0%,
-    //         rgba(0, 0, 0, 0.738) 19%,
-    //         rgba(0, 0, 0, 0.541) 34%,
-    //         rgba(0, 0, 0, 0.382) 47%,
-    //         rgba(0, 0, 0, 0.278) 56.5%,
-    //         rgba(0, 0, 0, 0.194) 65%,
-    //         rgba(0, 0, 0, 0.126) 73%,
-    //         rgba(0, 0, 0, 0.075) 80.2%,
-    //         rgba(0, 0, 0, 0.042) 86.1%,
-    //         rgba(0, 0, 0, 0.021) 91%,
-    //         rgba(0, 0, 0, 0.008) 95.2%,
-    //         rgba(0, 0, 0, 0.002) 98.2%,
-    //         transparent 100%
-    //     );
-    // }
-    // &::after {
-    //     left: calc(100vw - 6rem);
-    //     background: linear-gradient(
-    //         to left,
-    //         $smooth-black-background 0%,
-    //         rgba(0, 0, 0, 0.738) 19%,
-    //         rgba(0, 0, 0, 0.541) 34%,
-    //         rgba(0, 0, 0, 0.382) 47%,
-    //         rgba(0, 0, 0, 0.278) 56.5%,
-    //         rgba(0, 0, 0, 0.194) 65%,
-    //         rgba(0, 0, 0, 0.126) 73%,
-    //         rgba(0, 0, 0, 0.075) 80.2%,
-    //         rgba(0, 0, 0, 0.042) 86.1%,
-    //         rgba(0, 0, 0, 0.021) 91%,
-    //         rgba(0, 0, 0, 0.008) 95.2%,
-    //         rgba(0, 0, 0, 0.002) 98.2%,
-    //         transparent 100%
-    //     );
-    // }
     & .static-date {
         position: absolute;
         top: -20vh;

@@ -14,7 +14,8 @@ get_header(); ?>
     <h2>Discover the mirano</h2>
     <p>The « Cine Mirano » cinema opened its doors in 1934, Closed down in 1978 to then be transformed into a nightclub
         in 1981.</br> In 2017, it closed its doors for 2 years for a major makeover and re-opened in 2019 under new
-        management.</br> Now open with an urban programming from Thursday to Sunday.</br> Available for hire on request
+        management.</br> Now open with an urban programming from Thursday to Sunday.</br>Available for
+        hire on request</br></br><span class="section__end__cta">Find out more here</span>
     </p>
 </section>
 <section class="swipeContainer">
@@ -23,16 +24,22 @@ get_header(); ?>
         <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/hero_bg.jpg" alt="">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mirano-slider-1.jpg" alt="">
             </div>
             <div class="swiper-slide">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/nguyen_rs.jpg" alt="">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mirano-slider-2.jpg" alt="">
             </div>
             <div class="swiper-slide">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/benoit_rs.jpg" alt="">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mirano-slider-3.jpg" alt="">
             </div>
             <div class="swiper-slide">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/retable.jpg" alt="">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mirano-slider-4.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mirano-slider-4.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mirano-slider-4.jpg" alt="">
             </div>
         </div>
         <!-- If we need pagination -->
@@ -127,15 +134,6 @@ get_header(); ?>
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/1912.png" alt="">
                 </div>
             </div>
-        </section>
-        <section class="panel">
-            FOUR
-        </section>
-        <section class="panel">
-            FIVE
-        </section>
-        <section class="panel">
-            SIX??
         </section>
 
     </div>
