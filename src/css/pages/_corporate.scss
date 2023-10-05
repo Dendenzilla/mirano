@@ -1,0 +1,22 @@
+.corpo {
+    padding: 0 1rem;
+    max-width: 1440px;
+    margin: 0 auto;
+    & h1 {
+        text-align: left;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        & .img__holder {
+            width: 45%;
+            max-width: 40rem;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        & .txt__holder {
+            width: 50%;
+        }
+    }
+}

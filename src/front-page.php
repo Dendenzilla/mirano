@@ -68,70 +68,61 @@ get_header(); ?>
         </div>
         <div class="description panel blue" style="height:65%">
             <div>
-                <h1>Horizontal snapping sections (VERY simple)</h1>
-                <p>Scroll vertically to scrub the horizontal animation. It also dynamically snaps to the sections in an
-                    organic way based on the velocity. The snapping occurs based on the natural ending position after
-                    momentum is applied, not a simplistic "wherever it is when the user stops".</p>
-                <div class="scroll-down">Scroll down<div class="arrow"></div>
-                </div>
+                <p>The “Ciné Mirano” cinema opened its doors in 1934, closed down in 1978 to then be transformed into a
+                    nightclub in 1981.</p>
+                <p>In 2017, it closed its doors again for 2 years for a major makeover and re-opened
+                    in 2019 under new management.</p>
+                <p>Now open for business every Friday & Saturday.</p></br>
+                <p>Available for hire on request.</p>
+                <p>Scroll down to learn more</p>
             </div>
         </div>
 
 
         <section class="panel">
             <div class="panel__container">
-                <div class="panel__container__text">
+                <div class="panel__container__text --large">
                     <h3>1912</h3>
                     <p>From 1912, brasserie-cinema-event space 'A la Girafe' at no 38. In 1931 transformed into a
                         cinema, first under the name of Casino de Saint-Josse, then in 1942, under the current name of
                         Mirano. It was at this time that the entrance was adapted to the style of the time by the
                         architect R. AJOUX, who also drew the plans for the Century cinema in 1938 and a 1st project,
-                        not finished, for the Marignan.
-                        After the demolition of buildings 5, 38 and 40, it was reconstructed in 1951. Until 1976,
-                        managed by the company Les Cinés de Saint-Josse, which also operates the Marignan. In 1977,
-                        taken over by the S.P.R.L. Les Cinés Madou. Originally, a capacity of 600 over the parterre and
-                        the balcony. The last showing took place in 1978.</p>
+                        not finished, for the Marignan.</p>
+                    <p>After the demolition of buildings 5, 38 and 40, it was reconstructed in 1951. Until 1976, managed
+                        by the company Les Cinés de Saint-Josse, which also operates the Marignan. In 1977, taken over
+                        by the S.P.R.L. Les Cinés Madou. Originally, a capacity of 600 over the parterre and the
+                        balcony. The last showing took place in 1978.</p>
                 </div>
-                <div class="panel__container__img">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/1912.png" alt="">
+                <div class="panel__container__img"
+                    style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/1912.png');">
+                    <!-- <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/1912.png" alt=""> -->
                 </div>
             </div>
         </section>
         <section class="panel">
             <div class="panel__container">
                 <div class="panel__container__text">
-                    <h3>1912</h3>
-                    <p>From 1912, brasserie-cinema-event space 'A la Girafe' at no 38. In 1931 transformed into a
-                        cinema, first under the name of Casino de Saint-Josse, then in 1942, under the current name of
-                        Mirano. It was at this time that the entrance was adapted to the style of the time by the
-                        architect R. AJOUX, who also drew the plans for the Century cinema in 1938 and a 1st project,
-                        not finished, for the Marignan.
-                        After the demolition of buildings 5, 38 and 40, it was reconstructed in 1951. Until 1976,
-                        managed by the company Les Cinés de Saint-Josse, which also operates the Marignan. In 1977,
-                        taken over by the S.P.R.L. Les Cinés Madou. Originally, a capacity of 600 over the parterre and
-                        the balcony. The last showing took place in 1978.</p>
+                    <h3>1981</h3>
+                    <p>Renovated again in 1981, the Mirano Continental opened as a nightclub.</p>
                 </div>
-                <div class="panel__container__img">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/1912.png" alt="">
+                <div class="panel__container__img"
+                    style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/1989.jpeg');">
+                    <!-- <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/1912.png" alt=""> -->
                 </div>
             </div>
         </section>
         <section class="panel">
             <div class="panel__container">
                 <div class="panel__container__text">
-                    <h3>1912</h3>
-                    <p>From 1912, brasserie-cinema-event space 'A la Girafe' at no 38. In 1931 transformed into a
-                        cinema, first under the name of Casino de Saint-Josse, then in 1942, under the current name of
-                        Mirano. It was at this time that the entrance was adapted to the style of the time by the
-                        architect R. AJOUX, who also drew the plans for the Century cinema in 1938 and a 1st project,
-                        not finished, for the Marignan.
-                        After the demolition of buildings 5, 38 and 40, it was reconstructed in 1951. Until 1976,
-                        managed by the company Les Cinés de Saint-Josse, which also operates the Marignan. In 1977,
-                        taken over by the S.P.R.L. Les Cinés Madou. Originally, a capacity of 600 over the parterre and
-                        the balcony. The last showing took place in 1978.</p>
+                    <h3>2019</h3>
+                    <p>In 2017, it closed its doors again for 2 years for a major makeover and re-opened in 2019 under
+                        new management. From the gold/black colour codes to the choice of materials such as limestone or
+                        wooden panelling and the (re)introduction of neon lights, everything possible has been done to
+                        return the place to its former glory. Now open every weekend.</p>
                 </div>
-                <div class="panel__container__img">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/1912.png" alt="">
+                <div class="panel__container__img"
+                    style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/2019.jpg');">
+                    <!-- <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/1912.png" alt=""> -->
                 </div>
             </div>
         </section>

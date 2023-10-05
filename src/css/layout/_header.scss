@@ -17,7 +17,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4.125rem;
+    gap: 2.125rem;
     padding: 2.625rem 0;
     background: linear-gradient(
         to bottom,
@@ -35,10 +35,13 @@ nav {
         rgba(0, 0, 0, 0.002) 98.2%,
         transparent 100%
     );
-
-    & a {
-        color: $smooth-white;
-        text-decoration: none;
-        text-transform: uppercase;
+    & span {
+        width: 110px;
+        text-align: center;
+        & a {
+            color: $smooth-white;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
     }
 }

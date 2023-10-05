@@ -26,11 +26,11 @@
 <body>
     <header>
         <nav>
-            <a href="#">Home</a>
-            <a href="<?php echo get_page_link(9) ?>">Event</a>
+            <span><a href="<?php echo get_home_url();?>">Home</a></span>
+            <span><a href="<?php echo get_page_link(9) ?>">Event</a></span>
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mirano-logo.svg" alt="" class="mirano_logo">
-            <a href="#">Corporate</a>
-            <a href="#">Contact</a>
+            <span><a href="<?php echo get_page_link(58) ?>">Corporate</a></span>
+            <span><a href="#">Contact</a></span>
         </nav>
     </header>
     <!-- FIN HEADER -->
