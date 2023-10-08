@@ -65,7 +65,7 @@ gsap.to(sections, {
 // GSAP HEADER REVEAL BASED ON SCROLL UP
 
 const showAnim = gsap
-    .from("nav", {
+    .from("header", {
         yPercent: -100,
         paused: true,
         duration: 0.2,
@@ -119,3 +119,18 @@ const swiper = new Swiper(".swiper", {
 // END SWIPER
 // END SWIPER
 // END SWIPER
+
+// BURGER ANIM
+// BURGER ANIM
+// BURGER ANIM
+$(".burger").addClass("unToggled"),
+    $(".burger").click(function () {
+        $("header").toggleClass("active"),
+            $(this).toggleClass("toggled"),
+            $(this).toggleClass("unToggled"),
+            $("body").toggleClass("fixed-position");
+        $("html").toggleClass("fixed-position");
+    });
+// END BURGER ANIM
+// END BURGER ANIM
+// END BURGER ANIM

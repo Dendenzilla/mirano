@@ -11,7 +11,8 @@ get_header(); ?>
             style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/corpo.jpg');">
         </div>
         <div class="txt__holder">
-            <h2>Art blanc</h2>
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/artblanc.png" alt="art blanc logo">
+            <h4>Art blanc</h4>
             <p>This former cinema offers a breathtaking setting for your corporate events. Its steps, podiums, and its
                 famous rotating dance floor promise to bring back the most beautiful evenings to life! The motorized
                 dance floor takes a central place and allows you to stage a product launch or a show. The balcony under

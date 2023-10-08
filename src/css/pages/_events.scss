@@ -44,3 +44,17 @@
         }
     }
 }
+@media only screen and (max-width: 576px) {
+    .events__container {
+        & .event {
+            flex-direction: column;
+            &__infos {
+                padding: 0 1rem;
+            }
+            &__img {
+                width: 120px;
+                min-width: unset;
+            }
+        }
+    }
+}

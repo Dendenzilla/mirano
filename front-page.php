@@ -79,7 +79,7 @@ get_header(); ?>
         </div>
 
 
-        <section class="panel">
+        <section class="panel large-txt">
             <div class="panel__container">
                 <div class="panel__container__text --large">
                     <h3>1912</h3>
@@ -128,9 +128,6 @@ get_header(); ?>
         </section>
 
     </div>
-</section>
-<section class="after">
-    <p>section</p>
 </section>
 
 <?php get_footer(); ?>

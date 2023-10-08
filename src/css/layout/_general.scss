@@ -56,6 +56,10 @@ h3 {
     line-height: 0.95;
     font-family: "Raleway", sans-serif;
 }
+h4 {
+    font-size: 2rem;
+    color: $smooth-white;
+}
 p {
     color: $smooth-white;
     font-size: 1.25rem;
@@ -169,7 +173,8 @@ form {
         }
     }
     & input,
-    textarea {
+    textarea,
+    select {
         border: none;
         width: 100%;
         background-color: transparent;
@@ -381,6 +386,48 @@ button {
                     width: 100%;
                 }
                 &__img {
+                    max-height: 60%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 576px) {
+    h1 {
+        font-size: clamp(1.5rem, 2.8rem + 3.3333vw, 3.5rem);
+    }
+    .panel-container {
+        height: 80vh;
+        & .static-date {
+            top: -10vh;
+            & span {
+                font-size: 3rem;
+            }
+        }
+        & .panel {
+            &.large-txt {
+                & h3 {
+                    font-size: 2rem;
+                }
+                & p {
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                }
+            }
+            &__container {
+                flex-direction: column-reverse;
+                justify-content: flex-end;
+                gap: 2rem;
+                &__text {
+                    width: 100%;
+                    &.--large {
+                        width: 100%;
+                    }
+                }
+                &__img {
+                    width: 100%;
+                    max-width: 100%;
+                    background-size: cover;
                     max-height: 60%;
                 }
             }

@@ -17,6 +17,48 @@
         }
         & .txt__holder {
             width: 50%;
+            position: relative;
+            & img {
+                width: 126px;
+                position: absolute;
+                top: 4rem;
+                left: -7rem;
+            }
+            & h4 {
+                padding-top: 8rem;
+                font-family: "Mulish", sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-transform: uppercase;
+            }
+            & p {
+            }
+        }
+    }
+}
+@media only screen and (max-width: 576px) {
+    .corpo {
+        &__container {
+            flex-direction: column;
+            & .img__holder {
+                width: 100%;
+                height: 150px;
+            }
+            & .txt__holder {
+                width: 100%;
+                position: relative;
+                & img {
+                    width: 126px;
+                    position: absolute;
+                    top: -3rem;
+                    right: 1rem;
+                    left: unset;
+                }
+                & h4 {
+                    padding-top: 0rem;
+                }
+            }
         }
     }
 }

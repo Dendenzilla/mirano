@@ -30,8 +30,11 @@
             <span><a href="<?php echo get_page_link(9) ?>">Event</a></span>
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mirano-logo.svg" alt="" class="mirano_logo">
             <span><a href="<?php echo get_page_link(58) ?>">Corporate</a></span>
-            <span><a href="#">Contact</a></span>
+            <span><a href="<?php echo get_page_link(62) ?>">Contact</a></span>
         </nav>
+        <div class="burger burger2 unToggled">
+            <div></div>
+        </div>
     </header>
     <!-- FIN HEADER -->
     <!-- DEBUT MAIN CONT -->
