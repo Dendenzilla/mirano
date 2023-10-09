@@ -95,7 +95,6 @@ get_header(); ?>
                 </div>
                 <div class="panel__container__img"
                     style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/1912.png');">
-                    <!-- <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/1912.png" alt=""> -->
                 </div>
             </div>
         </section>
@@ -107,7 +106,6 @@ get_header(); ?>
                 </div>
                 <div class="panel__container__img"
                     style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/1989.jpeg');">
-                    <!-- <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/1912.png" alt=""> -->
                 </div>
             </div>
         </section>
@@ -122,7 +120,6 @@ get_header(); ?>
                 </div>
                 <div class="panel__container__img"
                     style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/2019.jpg');">
-                    <!-- <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/1912.png" alt=""> -->
                 </div>
             </div>
         </section>

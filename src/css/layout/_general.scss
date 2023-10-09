@@ -24,7 +24,7 @@ h2 {
     font-size: clamp(1rem, 0.6rem + 3.3333vw, 6rem);
     font-family: "Bebas Neue", sans-serif;
     text-wrap: balance;
-    font-size: 6rem;
+    font-size: clamp(3rem, 0.6rem + 3.3333vw, 5rem);
     font-style: normal;
     font-weight: 400;
     text-transform: uppercase;

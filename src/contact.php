@@ -12,7 +12,7 @@ get_header(); ?>
         </div>
         <aside>
             <div class="contact__form">
-                <form action="">
+                <!-- <form action="">
                     <div>
                         <label for="form-name">Name</label>
                         <input type="text" name="name" id="form-name" placeholder="Type your name" />
@@ -38,7 +38,8 @@ get_header(); ?>
                     <div>
                         <button type="submit">Send</button>
                     </div>
-                </form>
+                </form> -->
+                <?php echo do_shortcode('[contact-form-7 id="e2721f7" title="Contact form 1"]'); ?>
             </div>
             <div class="contact__practical">
                 <h4>Practical informations</h4>
