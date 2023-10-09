@@ -16,8 +16,11 @@
             background-size: cover;
             background-position: center;
         }
-        & .contact__form {
+        & aside {
             width: 50%;
+        }
+        & .contact__form {
+            width: 100%;
             & img {
                 width: 126px;
                 aspect-ratio: 1;
@@ -35,6 +38,7 @@
                 textarea {
                     border-bottom: 1px solid gray;
                     padding-top: 0.5rem;
+                    color: $smooth-white;
                 }
                 & ::placeholder {
                     color: $smooth-grey;
@@ -42,27 +46,136 @@
                 & select {
                     display: block;
                     background-color: unset;
-                    border: none;
-                    color: $smooth-grey;
+                    color: $smooth-white;
+                    & option {
+                        color: $smooth-black;
+                    }
                 }
                 & button {
                     float: right;
+                    color: $smooth-white;
+                }
+            }
+        }
+        & .contact__practical {
+            & h4 {
+                margin: 6rem 0 0 0;
+            }
+            & ul {
+                & li {
+                    padding-left: 0.5rem;
+                    color: $smooth-white;
+                    font-weight: 300;
+                    font-family: "Oswald", sans-serif;
+                    &::marker {
+                        content: "—";
+                        color: $smooth-white;
+                    }
                 }
             }
         }
     }
 }
-@media only screen and (max-width: 576px) {
+
+// FORMS
+// FORMS
+// FORMS
+form {
+    & .input-container {
+        position: relative;
+        overflow: hidden;
+        & .border {
+            position: absolute;
+            left: 0;
+            bottom: 1.2rem;
+            width: 300%;
+            height: 50%;
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxMjAwIDYwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMi4yIiBkPSJtIDAsNTYuMzc2NTI1IGMgMCwwIDI5OC42NjYsMCAzOTkuMzMzLDAgNDkuMDAzLDAgMTE0LjY2MSwtMTMuMjUzMDUgMTk3LjY2NywtMTMuMjUzMDUgNzcuMzI3LDAgMTM1LDEzLjI1MzA1IDIwMC45OTksMTMuMjUzMDUgOTUuOTk2LDAgNDAyLjAwMSwwIDQwMi4wMDEsMCIvPjwvc3ZnPg==);
+            z-index: -1;
+            opacity: 0.5;
+            transform: translateX(-66.6%);
+            transition: opacity 0.4s,
+                transform 0s cubic-bezier(0.18, 0.56, 0.51, 0.85);
+        }
+        & input:focus ~ .border,
+        & textarea:focus ~ .border {
+            opacity: 1;
+            transform: translateX(0);
+            transition-duration: 0.8s, 0.8s;
+        }
+        & span.wpcf7-form-control-wrap {
+            position: unset;
+        }
+    }
+    & input,
+    textarea,
+    select {
+        border: none;
+        width: 100%;
+        background-color: transparent;
+        margin: 0rem auto 1.5rem auto;
+    }
+    & input:focus,
+    textarea:focus {
+        outline: none;
+    }
+    & .codedropz-upload-wrapper {
+        width: 100% !important;
+    }
+    & > p {
+        text-align: center;
+        display: grid;
+        font-size: 1.5rem;
+        color: $smooth-black;
+    }
+    & input.wpcf7-submit {
+        display: block;
+        width: fit-content;
+        border: none;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    & h3 {
+        font-size: 1.3rem !important;
+        font-weight: normal;
+        color: $smooth-black;
+    }
+    & a {
+        font-weight: bold;
+    }
+}
+// FORM INVALID NOTIFICATIONS
+.wpcf7-response-output {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+textarea ~ .wpcf7-not-valid-tip {
+    top: 7rem;
+}
+.wpcf7-not-valid-tip {
+    position: absolute;
+    z-index: -1;
+    font-size: 0.8rem !important;
+    top: 3.5rem;
+    left: 0;
+}
+
+@media only screen and (max-width: 800px) {
     .contact {
         &__container {
             justify-content: flex-start;
             flex-direction: column;
             margin-bottom: 4rem;
             min-height: unset;
+            & aside {
+                width: 100%;
+            }
             & .img__holder {
                 margin-bottom: 1rem;
                 width: 100%;
                 height: 150px;
+                max-width: unset;
             }
             & .contact__form {
                 width: 100%;

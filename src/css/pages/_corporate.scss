@@ -37,12 +37,13 @@
         }
     }
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 800px) {
     .corpo {
         &__container {
             flex-direction: column;
             & .img__holder {
                 width: 100%;
+                max-width: unset;
                 height: 150px;
             }
             & .txt__holder {

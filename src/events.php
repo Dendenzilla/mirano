@@ -41,21 +41,24 @@ get_header(); ?>
     <div class="event">
 
         <div class="event__img" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>');"></div>
-        <div class="event__infos">
-            <h3><?php the_title();?> – <?php echo $posts[1]->format('d/m');?></h3>
+        <div class="event__holder">
+            <div class="event__infos">
+                <h3><?php the_title();?> – <?php echo $posts[1]->format('d/m');?></h3>
 
-            <p><?php echo esc_html( get_field('time_picker')); ?></p>
-            <p><?php echo esc_html( get_field('location')); ?></p>
+                <p><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/clock.png"
+                        alt="event time icon"><?php echo esc_html( get_field('time_picker')); ?></p>
+                <p><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/location.png"
+                        alt="event location icon"><?php echo esc_html( get_field('location')); ?></p>
+            </div>
+            <div class="event__tickets">
+                <?php if( get_field('tickets_url')){ ?>
+                <button><a href="<?php echo esc_html(get_field('tickets_url')); ?>" target="_blank" rel="noreferrer"
+                        referrerpolicy="no-referrer">Acheter des tickets</a></button>
+                <?php } else { ?>
+                <p>Tickets only available at the door</p>
+                <?php } ?>
+            </div>
         </div>
-        <div class="event__tickets">
-            <?php if( get_field('tickets_url')){ ?>
-            <button><a href="<?php echo esc_html(get_field('tickets_url')); ?>" target="_blank" rel="noreferrer"
-                    referrerpolicy="no-referrer">Acheter des tickets</a></button>
-            <?php } else { ?>
-            <p>Tickets only available at the door</p>
-            <?php } ?>
-        </div>
-
     </div>
     <?php endwhile;
         }

@@ -1,4 +1,5 @@
 .mirano_logo {
+    width: 200px;
     max-width: 200px;
 }
 .st0 {
@@ -37,6 +38,10 @@ nav {
         rgba(0, 0, 0, 0.002) 98.2%,
         transparent 100%
     );
+    & a.__title {
+        display: block;
+        width: 200px;
+    }
     & span {
         width: 110px;
         text-align: center;
@@ -44,7 +49,6 @@ nav {
             color: $smooth-white;
             text-decoration: none;
             text-transform: uppercase;
-
             &.active {
                 border-bottom: 2px solid gray;
             }
@@ -307,10 +311,10 @@ nav {
     }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 800px) {
     .burger {
         display: block;
-        top: 20px;
+        top: 12px;
     }
 
     header {
@@ -327,6 +331,7 @@ nav {
     header nav {
         -webkit-justify-content: center;
         justify-content: center;
+        height: 100%;
         // position: relative;
         // background: unset;
     }
@@ -359,7 +364,7 @@ nav {
         display: block;
     }
 
-    header.active nav img {
+    header.active nav a.__title {
         -webkit-order: -1;
         order: -1;
         margin-bottom: 2rem;
