@@ -24,7 +24,7 @@
                 margin: 0 auto;
                 position: relative;
                 display: block;
-                margin-top: 2rem;
+                margin-top: 7rem;
             }
             & h4 {
                 padding-top: 8rem;
@@ -53,11 +53,8 @@
                 width: 100%;
                 position: relative;
                 & img {
-                    width: 126px;
-                    position: absolute;
-                    top: -3rem;
-                    right: 1rem;
-                    left: unset;
+                    max-width: 80%;
+                    margin-top: 1.5rem;
                 }
                 & h4 {
                     padding-top: 0rem;

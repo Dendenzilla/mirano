@@ -11,7 +11,7 @@ get_header(); ?>
             style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/corpo.jpg');">
         </div>
         <div class="txt__holder">
-            <h4>Art blanc</h4>
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ab_logo-full.png" alt="art blanc logo">
             <p>This former cinema offers a breathtaking setting for your corporate events. Its steps, podiums, and its
                 famous rotating dance floor promise to bring back the most beautiful evenings to life! The motorized
                 dance floor takes a central place and allows you to stage a product launch or a show. The balcony under
@@ -26,7 +26,7 @@ get_header(); ?>
                 or script your events. Feel free to share all your wildest desires and specific requests with us.</p>
             <a href="https://www.artblanc.be/content/uploads/2019/07/MIRANO-CORPORATE-PRESENTATION-2022.pdf"
                 target="_blank">For more information, please refer to the brochure</a>
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ab_logo-full.png" alt="art blanc logo">
+
         </div>
     </div>
 </div>

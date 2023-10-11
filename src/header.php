@@ -19,9 +19,28 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <!-- END SWIPER -->
     <link rel="icon" href="">
-    <title>Martin Adriaensen's Portfolio</title>
+    <title>
+        <?php if ( is_front_page() ) {
+            echo "Welcome";
+        } elseif ( is_page(58) ) {
+            echo "Corporate";
+        } else {
+            the_title();
+        };?> | Mirano Brussels</title>
     <?php wp_head(); ?>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NRM80K41HZ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+
+function gtag() {
+    dataLayer.push(arguments);
+}
+gtag('js', new Date());
+
+gtag('config', 'G-NRM80K41HZ');
+</script>
 
 <body>
     <header>

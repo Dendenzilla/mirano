@@ -52,11 +52,16 @@ get_header(); ?>
                         alt="event location icon"><?php echo esc_html( get_field('location')); ?></p>
             </div>
             <div class="event__tickets">
-                <?php if( get_field('tickets_url')){ ?>
+                <?php if( get_field('facebook_url')){ ?>
+                <a href="<?php echo esc_html(get_field('facebook_url')); ?>" target="_blank" rel="noreferrer"
+                    referrerpolicy="no-referrer">Voir l'event</a>
+                <?php } if( get_field('tickets_url')){ ?>
                 <button><a href="<?php echo esc_html(get_field('tickets_url')); ?>" target="_blank" rel="noreferrer"
                         referrerpolicy="no-referrer">Acheter des tickets</a></button>
+                <?php } elseif( get_field('tickets_tbd')){ ?>
+                <p>Tickets en vente bientôt</p>
                 <?php } else { ?>
-                <p>Tickets only available at the door</p>
+                <p>Tickets en vente à l'entrée</p>
                 <?php } ?>
             </div>
         </div>

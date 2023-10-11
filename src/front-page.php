@@ -6,7 +6,8 @@ get_header(); ?>
 <section class="hero">
     <div style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/img/hero_bg-crop.jpg' );">
         <span></span>
-        <h1>Mirano brussels</h1>
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mirano-logo-neg.svg" alt=""
+            class="mirano_logo --hero">
         <button><a href="<?php echo get_page_link(9) ?>">Upcoming events</a></button>
     </div>
 </section>

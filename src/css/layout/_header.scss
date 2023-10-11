@@ -1,6 +1,11 @@
 .mirano_logo {
-    width: 200px;
-    max-width: 200px;
+    width: 160px;
+    max-width: 160px;
+    &.--hero {
+        width: 800px;
+        max-width: 80%;
+        margin: 0 auto;
+    }
 }
 .st0 {
     fill: $smooth-white;
@@ -41,6 +46,7 @@ nav {
     & a.__title {
         display: block;
         width: 200px;
+        text-align: center;
     }
     & span {
         width: 110px;
@@ -49,6 +55,7 @@ nav {
             color: $smooth-white;
             text-decoration: none;
             text-transform: uppercase;
+            font-size: 0.8rem;
             &.active {
                 border-bottom: 2px solid gray;
             }
