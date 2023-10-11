@@ -12,6 +12,7 @@ get_header(); ?>
         'meta_key'  => 'date_picker',
         'orderby'   => 'meta_value_num',
         'order'     => 'ASC',
+        'posts_per_page'=> '-1',
         'meta_query'=> array(
             array(
                 'key' => 'date_picker',

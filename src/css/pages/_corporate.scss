@@ -19,10 +19,12 @@
             width: 50%;
             position: relative;
             & img {
-                width: 126px;
-                position: absolute;
-                top: 4rem;
-                left: -7rem;
+                width: 300px;
+                max-width: 80%;
+                margin: 0 auto;
+                position: relative;
+                display: block;
+                margin-top: 2rem;
             }
             & h4 {
                 padding-top: 8rem;
@@ -32,7 +34,8 @@
                 line-height: normal;
                 text-transform: uppercase;
             }
-            & p {
+            & a {
+                text-decoration: underline;
             }
         }
     }

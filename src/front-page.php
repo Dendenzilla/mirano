@@ -4,10 +4,10 @@ Template Name: Front page
 */
 get_header(); ?>
 <section class="hero">
-    <div style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/img/hero_bg.jpg' );">
+    <div style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/img/hero_bg-crop.jpg' );">
         <span></span>
         <h1>Mirano brussels</h1>
-        <button>Upcoming events</button>
+        <button><a href="<?php echo get_page_link(9) ?>">Upcoming events</a></button>
     </div>
 </section>
 <section class="center">
@@ -15,7 +15,8 @@ get_header(); ?>
     <p>The « Cine Mirano » cinema opened its doors in 1934, Closed down in 1978 to then be transformed into a nightclub
         in 1981.</br> In 2017, it closed its doors for 2 years for a major makeover and re-opened in 2019 under new
         management.</br> Now open with an urban programming from Thursday to Sunday.</br>Available for
-        hire on request</br></br><span class="section__end__cta">Find out more here</span>
+        hire on request</br></br><span class="section__end__cta"><a href="<?php echo get_page_link(58) ?>"> Find out
+                more here</a></span>
     </p>
 </section>
 <section class="swipeContainer">
@@ -36,10 +37,10 @@ get_header(); ?>
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mirano-slider-4.jpg" alt="">
             </div>
             <div class="swiper-slide">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mirano-slider-4.jpg" alt="">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mirano-slider-5.jpeg" alt="">
             </div>
             <div class="swiper-slide">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mirano-slider-4.jpg" alt="">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mirano-slider-6.jpeg" alt="">
             </div>
         </div>
         <!-- If we need pagination -->

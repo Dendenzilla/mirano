@@ -1,11 +1,11 @@
 .events__container {
     color: white;
     padding: 0 1rem;
-    max-width: 1440px;
+    max-width: 1140px;
     margin: 0 auto;
     & h2 {
-        font-size: clamp(1rem, 1.8rem + 3.3333vw, 5rem);
-        margin-bottom: 1rem;
+        font-size: clamp(1rem, 1.8rem + 3.3333vw, 3.5rem);
+        margin-bottom: 2.5rem;
     }
     & .event {
         display: flex;
@@ -28,7 +28,7 @@
             width: 100%;
             padding-left: 2rem;
             & h3 {
-                font-size: 1.5rem;
+                font-size: 1.2rem;
             }
             & p {
                 font-family: "Mulish", sans-serif;
@@ -72,6 +72,29 @@
             flex-direction: column;
             &__infos {
                 padding: 0 1rem;
+                & p {
+                    margin: 0;
+                    font-size: 1rem;
+                    & + p {
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+            &__img {
+                width: 220px;
+                max-width: 50%;
+                min-width: unset;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 360px) {
+    .events__container {
+        & .event {
+            &__infos {
+                & h3 {
+                    font-size: 1rem;
+                }
             }
             &__img {
                 width: 220px;

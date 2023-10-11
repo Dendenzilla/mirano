@@ -13,7 +13,7 @@
                 </div>
                 <div>
                     <p>COPYRIGHTS 2019 - 2023 - PRIVACY POLICY</p>
-                    <p>WEBSITE BY DEKUBE</p>
+                    <p><a href="https://dekube.be/" target="_blank">WEBSITE BY DEKUBE</a></p>
                 </div>
             </div>
         </div>
