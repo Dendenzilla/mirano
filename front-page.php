@@ -6,54 +6,16 @@ get_header(); ?>
 <section class="hero">
     <div style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/img/hero_bg-crop.jpg' );">
         <span></span>
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mirano-logo-neg.svg" alt=""
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mirano-logo-neg-cropped.svg" alt=""
             class="mirano_logo --hero">
         <button><a href="<?php echo get_page_link(9) ?>">Upcoming events</a></button>
     </div>
 </section>
 <section class="center">
-    <h2>Discover the mirano</h2>
-    <p>The « Cine Mirano » cinema opened its doors in 1934, Closed down in 1978 to then be transformed into a nightclub
-        in 1981.</br> In 2017, it closed its doors for 2 years for a major makeover and re-opened in 2019 under new
-        management.</br> Now open with an urban programming from Thursday to Sunday.</br>Available for
-        hire on request</br></br><span class="section__end__cta"><a href="<?php echo get_page_link(58) ?>"> Find out
-                more here</a></span>
-    </p>
+    <?php dynamic_sidebar( 'home_right_1' ); ?>
 </section>
 <section class="swipeContainer">
-    <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mirano-slider-1.jpg" alt="">
-            </div>
-            <div class="swiper-slide">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mirano-slider-2.jpg" alt="">
-            </div>
-            <div class="swiper-slide">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mirano-slider-3.jpg" alt="">
-            </div>
-            <div class="swiper-slide">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mirano-slider-4.jpg" alt="">
-            </div>
-            <div class="swiper-slide">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mirano-slider-5.jpeg" alt="">
-            </div>
-            <div class="swiper-slide">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mirano-slider-6.jpeg" alt="">
-            </div>
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-    </div>
+    <?php echo do_shortcode( '[metaslider id="178"]' ); ?>
 </section>
 <section class="timeline">
     <div class="panel-container">
