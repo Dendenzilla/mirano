@@ -12,7 +12,7 @@ get_header(); ?>
         </div>
         <aside>
             <div class="contact__form">
-                <?php echo do_shortcode('[contact-form-7 id="e2721f7" title="Contact form 1"]'); ?>
+                <?php echo do_shortcode('[contact-form-7 id="9c38ded" title="Contact form 1"]'); ?>
             </div>
             <div class="contact__practical">
                 <h4>Practical informations</h4>

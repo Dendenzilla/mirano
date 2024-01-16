@@ -7,3 +7,7 @@ add_action( 'init', 'wpb_custom_new_menu' );
 
 //add featured image
 add_theme_support( 'post-thumbnails' );
+
+// disable block frontend wrapper.
+
+add_filter( 'lzb/block_render/allow_wrapper', '__return_false' );

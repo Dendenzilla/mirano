@@ -28,9 +28,134 @@
         }
     }
 }
-
+.timelined {
+    margin-top: 6rem;
+    & .static-date {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & span {
+            color: white;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 6rem;
+            font-style: normal;
+            font-weight: 400;
+            padding: 0 0.25rem;
+        }
+    }
+    & .panels {
+        padding: 0 5rem;
+        width: 1400px;
+        max-width: 100%;
+        margin: 0 auto;
+        &__panel {
+            width: 1200px;
+            max-width: 100%;
+            display: flex;
+            gap: 3rem;
+            position: relative;
+            margin-top: 8rem;
+            &.--description {
+                text-align: center;
+                margin: 0 auto;
+                display: block;
+                margin-bottom: 10rem;
+            }
+            &.--second-panel {
+                flex-direction: row-reverse;
+                margin-left: auto;
+            }
+            &__text {
+                max-width: 700px;
+                &.--small {
+                    max-width: 350px;
+                }
+                & h3 {
+                    position: relative !important;
+                    top: unset !important;
+                    margin-top: 0;
+                }
+                & p:first-of-type {
+                    margin-top: 0;
+                }
+            }
+            &__img {
+                width: 40%;
+                min-height: 20rem;
+                max-height: 100%;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                &.--medium {
+                    width: 70%;
+                    height: 30rem;
+                }
+            }
+            & h3 {
+                position: absolute;
+                top: -6rem;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .timelined {
+        & .panels {
+            padding: 0 1rem;
+            &__panel {
+                margin-top: 5.5rem;
+                &.--second-panel {
+                }
+                gap: 1rem;
+                &__text {
+                    max-width: 400px;
+                    & h3 {
+                        text-align: center;
+                    }
+                }
+                &__img {
+                    width: 100%;
+                    background-position: center;
+                    &.--medium {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
 @media only screen and (max-width: 800px) {
     .hero {
         margin-bottom: 3rem;
+    }
+    .timelined {
+        & .panels {
+            padding: 0 1rem;
+            &__panel {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 1.5rem;
+                &.--second-panel {
+                    flex-direction: column;
+                }
+                gap: 1rem;
+                &__text {
+                    width: 100%;
+                    max-width: 100%;
+                    & h3 {
+                        text-align: center;
+                    }
+                }
+                &__img {
+                    width: 100%;
+                    background-position: top;
+                    &.--medium {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
     }
 }
